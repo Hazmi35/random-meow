@@ -1,6 +1,6 @@
 {
   "name": "random-meow",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Get a random image of a cat!",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,8 @@
   "keywords": [
     "random-meow",
     "random cat",
-    "cat"
+    "cat",
+    "meow"
   ],
   "author": "Hazmi35",
   "license": "MIT",
