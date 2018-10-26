@@ -4,6 +4,7 @@ module.exports = main;
 
 /**
  * Get a random image of a cat!
+ * @returns {Promise} A promise that contains url to the image
  */
 function main() {
     () => {
