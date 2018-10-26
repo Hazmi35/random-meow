@@ -1,6 +1,6 @@
 {
   "name": "random-meow",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "Get a random image of a cat!",
   "main": "index.js",
   "scripts": {
