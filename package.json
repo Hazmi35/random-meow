@@ -1,0 +1,27 @@
+{
+  "name": "random-meow",
+  "version": "1.0.0",
+  "description": "Get a random image of a cat!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hazmi35/random-meow.git"
+  },
+  "keywords": [
+    "random-meow",
+    "random cat",
+    "cat"
+  ],
+  "author": "Hazmi35",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hazmi35/random-meow/issues"
+  },
+  "homepage": "https://github.com/Hazmi35/random-meow#readme",
+  "dependencies": {
+    "node-superfetch": "^0.1.9"
+  }
+}
