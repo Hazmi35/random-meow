@@ -12,7 +12,7 @@ function randomMeow() {
             if (res.ok) { //if the status code is 200 (OK), then return the body
                 return res.body;
             } else { //if not
-                console.error('Error: Error while fetching cat image :\n'+ res.error); //return an error
+                throw Error('Error: Error while fetching cat image :\n'+ res.error); //return an error
             }
         }
         var imageUrl = fetch().then(body => body.file); //get the image url
