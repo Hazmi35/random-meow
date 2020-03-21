@@ -19,7 +19,7 @@
     "random cat images"
   ],
   "engines": {
-    "node": ">=8"
+    "node": ">=8.x"
   },
   "author": {
     "email": "contact@hzmi.xyz",
