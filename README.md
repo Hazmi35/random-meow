@@ -13,7 +13,8 @@ npm install random-meow
 
 ## Usage
 ```js
-const randomMeow = require("random-meow");
+const meow = require("random-meow");
 
-randomMeow().then(url => console.log(url)).catch(console.error);
+// [note] You can use async/await
+meow().then(url => console.log(url)).catch(console.error);
 ```
