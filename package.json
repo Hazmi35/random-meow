@@ -1,10 +1,10 @@
 {
   "name": "random-meow",
-  "version": "2.2.5",
+  "version": "3.5.0",
   "description": "Get a random image of a cat!",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
@@ -14,15 +14,25 @@
     "random-meow",
     "random cat",
     "cat",
-    "meow"
+    "meow",
+    "random.cat",
+    "random cat images"
   ],
-  "author": "Hazmi35",
+  "engines": {
+    "node": ">=8"
+  },
+  "author": {
+    "email": "contact@hzmi.xyz",
+    "name": "Hazmi35",
+    "url": "https://hzmi.xyz/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Hazmi35/random-meow/issues"
   },
   "homepage": "https://github.com/Hazmi35/random-meow#readme",
-  "dependencies": {
-    "node-superfetch": "^0.1.9"
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.8.0"
   }
 }

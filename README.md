@@ -1,5 +1,7 @@
 ## random-meow
-Get a random image of a cat
+A Small package to get a random cat image
+
+Powered by: https://random.cat/
 
 [![N|Solid](https://nodei.co/npm/random-meow.png?downloads=true&stars=false)](https://www.npmjs.org/package/random-meow)
 
