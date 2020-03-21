@@ -7,11 +7,11 @@ Powered by: https://random.cat/
 
 
 # Installation
-## NPM
+### NPM
 ```
 npm install random-meow
 ```
-## YARN
+### Yarn
 ```
 yarn add random-meow
 ```
