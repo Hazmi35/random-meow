@@ -6,17 +6,17 @@ Powered by: https://random.cat/
 [![N|Solid](https://nodei.co/npm/random-meow.png?downloads=true&stars=false)](https://www.npmjs.org/package/random-meow)
 
 
-## Installation
-# NPM
+# Installation
+## NPM
 ```
 npm install random-meow
 ```
-# YARN
+## YARN
 ```
 yarn add random-meow
 ```
 
-## Usage
+# Usage
 ```js
 const meow = require("random-meow");
 
