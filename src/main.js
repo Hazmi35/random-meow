@@ -6,7 +6,7 @@ const request = new (require('./httpsClient'));
  */
 module.exports = function randomMeow() {
     return new Promise((resolve, reject) => {
-        request.get('htt[s://aws.random.cat/meow').then(res => {
+        request.get('https://aws.random.cat/meow').then(res => {
             resolve(res.body.file);
         }).catch(reject);
     });
