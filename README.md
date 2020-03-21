@@ -1,17 +1,25 @@
 ## random-meow
-Get a random image of a cat
+A Small package to get a random cat image
+
+Powered by: https://random.cat/
 
 [![N|Solid](https://nodei.co/npm/random-meow.png?downloads=true&stars=false)](https://www.npmjs.org/package/random-meow)
 
 
-## Installation
+# Installation
+### NPM
 ```
 npm install random-meow
 ```
+### Yarn
+```
+yarn add random-meow
+```
 
-## Usage
+# Usage
 ```js
-const randomMeow = require("random-meow");
+const meow = require("random-meow");
 
-randomMeow().then(url => console.log(url)).catch(console.error);
+// [note] You can use async/await
+meow().then(url => console.log(url)).catch(console.error);
 ```
