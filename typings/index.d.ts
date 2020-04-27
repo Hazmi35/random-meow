@@ -7,13 +7,6 @@ declare module 'random-meow' {
     */
     function meow(): Promise<String>;
 
-    /**
-    * Creates a GET request (Internal Function - NO SUPPORT OUTSIDE RANDOM-MEOW)
-    * @param {String} url Url
-    * @param {RequestOptions | object} [options] nodejs "https" options
-    * @returns {Promise<object>} A Promise containing response
-    * @private
-    */
     function get(url: string, options: RequestOptions): Promise<{ method: "GET", reqOptions: RequestOptions, raw: string, body: any,status: number, headers: IncomingHttpHeaders }>;
 
     export default Object.assign(meow, {get});
