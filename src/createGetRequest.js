@@ -25,8 +25,8 @@ module.exports = function get(url, options) {
                 status: null,
                 headers: null
             };
-            options.headers["user-agent"] = `${name}/${version} (+${repository})`;
-            options.headers["content-type"] = "application/json";
+            httpOptions.headers["user-agent"] = `${name}/${version} (+${repository})`;
+            httpOptions.headers["content-type"] = "application/json";
             Object.assign(httpOptions, options);
             const request = httpRequest(httpOptions, res => {
                 response.status = res.statusCode;
