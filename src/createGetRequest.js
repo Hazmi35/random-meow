@@ -6,7 +6,7 @@ const { name, version, repository } = require("../package.json")
 * Creates a GET request
 * @param {String} url Url
 * @param {RequestOptions | object} [options] nodejs "https" options
-* @returns {Promise<object>} A Promise containing response
+* @returns {Promise<{ method: "GET", reqOptions: RequestOptions, raw: string, body: any,status: number, headers: IncomingHttpHeaders }>} A Promise containing response
 * @private Internal Function - NO SUPPORT OUTSIDE RANDOM-MEOW
 */
 module.exports = function get(url, options) {
