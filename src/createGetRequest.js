@@ -1,6 +1,6 @@
 const { request: httpRequest } = require("https");
 const { parse } = require("url");
-const { name, version, repository } = require("../package.json")
+const { name, version, repository } = require("../package.json");
 
 /**
 * Creates a GET request
@@ -52,4 +52,4 @@ module.exports = function get(url, options) {
 
             request.end();
         });
-}
+};

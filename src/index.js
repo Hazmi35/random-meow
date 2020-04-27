@@ -10,6 +10,6 @@ function meow() {
             resolve(res.body.file);
         }).catch(reject);
     });
-};
+}
 
-module.exports = Object.assign(meow, {get})
+module.exports = Object.assign(meow, {get});

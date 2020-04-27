@@ -1,6 +1,6 @@
 {
   "name": "random-meow",
-  "version": "3.5.1",
+  "version": "3.6.0",
   "description": "Get a random image of a cat!",
   "main": "src/index.js",
   "scripts": {
@@ -22,11 +22,7 @@
   "engines": {
     "node": ">=8.x"
   },
-  "author": {
-    "email": "contact@hzmi.xyz",
-    "name": "Hazmi35",
-    "url": "https://hzmi.xyz/"
-  },
+  "author": "Hazmi35 (contact@hzmi.xyz) [https://github.com/Hazmi35]",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Hazmi35/random-meow/issues"
