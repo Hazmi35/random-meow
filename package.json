@@ -2,14 +2,14 @@
   "name": "random-meow",
   "version": "3.5.1",
   "description": "Get a random image of a cat!",
-  "main": "src/main.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "eslint --ignore-path .gitignore ."
   },
   "typings": "typings/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hazmi35/random-meow.git"
+    "url": "https://github.com/Hazmi35/random-meow.git"
   },
   "keywords": [
     "random-meow",
