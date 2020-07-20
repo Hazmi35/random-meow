@@ -6,8 +6,8 @@ const get = require('./createGetRequest');
  */
 function meow() {
     return new Promise((resolve, reject) => {
-        get('https://aws.random.cat/meow').then(res => {
-            resolve(res.body.file);
+        get('https://random.cat').then(res => {
+            resolve(res.toString().split('img src')[1].split('\'')[1]);
         }).catch(reject);
     });
 }
