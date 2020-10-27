@@ -23,7 +23,8 @@
   "main": "src/index.js",
   "typings": "typings/index.d.ts",
   "scripts": {
-    "lint": "eslint --ignore-path .gitignore ."
+    "lint": "eslint --ignore-path .gitignore .",
+    "test": "jest ----detectOpenHandles"
   },
   "eslintConfig": {
     "extends": "@hazmi35/eslint-config/node"
@@ -31,7 +32,8 @@
   "dependencies": {},
   "devDependencies": {
     "@hazmi35/eslint-config": "^2.1.0",
-    "eslint": "^7.12.1"
+    "eslint": "^7.12.1",
+    "jest": "^26.6.1"
   },
   "engines": {
     "node": ">=6.x"
