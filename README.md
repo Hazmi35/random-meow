@@ -23,3 +23,6 @@ const meow = require("random-meow");
 // [note] You can use async/await
 meow().then(url => console.log(url)).catch(console.error);
 ```
+
+### Note
+This package requires nodejs version 6.x or above, altough tested version are 10.x to 14.x, 6.x and 8.x should work too
