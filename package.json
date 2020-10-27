@@ -2,15 +2,6 @@
   "name": "random-meow",
   "version": "3.6.1",
   "description": "Get a random image of a cat!",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "eslint --ignore-path .gitignore ."
-  },
-  "typings": "typings/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Hazmi35/random-meow.git"
-  },
   "keywords": [
     "random-meow",
     "random cat",
@@ -19,17 +10,30 @@
     "random.cat",
     "random cat images"
   ],
-  "engines": {
-    "node": ">=8.x"
-  },
-  "author": "Hazmi35 (contact@hzmi.xyz) [https://github.com/Hazmi35]",
-  "license": "MIT",
+  "homepage": "https://github.com/Hazmi35/random-meow#readme",
   "bugs": {
     "url": "https://github.com/Hazmi35/random-meow/issues"
   },
-  "homepage": "https://github.com/Hazmi35/random-meow#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hazmi35/random-meow.git"
+  },
+  "license": "MIT",
+  "author": "Hazmi35 (contact@hzmi.xyz) [https://github.com/Hazmi35]",
+  "main": "src/index.js",
+  "typings": "typings/index.d.ts",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "eslintConfig": {
+    "extends": "@hazmi35/eslint-config/node"
+  },
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "@hazmi35/eslint-config": "^2.1.0",
+    "eslint": "^7.12.1"
+  },
+  "engines": {
+    "node": ">=8.x"
   }
 }
