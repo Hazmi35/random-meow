@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"target": "ES6",
+		"module": "commonjs",
+		"strict": true,
+		"baseUrl": ".",
+		"outDir": "dist",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"incremental": true,
+		"tsBuildInfoFile": ".cache/buildcache.tsbuildinfo",
+		"resolveJsonModule": true,
+		"typeRoots": ["node_modules/@types", "typings/index.d.ts"]
+	}
+}
