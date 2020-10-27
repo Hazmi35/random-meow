@@ -25,7 +25,7 @@ jobs:
       run: npm ci
 
     - name: Lint code
-      run: npm run lint
+      run: npm run lint && tsc
   test:
     needs: lint
     runs-on: ubuntu-latest
