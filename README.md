@@ -25,4 +25,4 @@ meow().then(url => console.log(url)).catch(console.error);
 ```
 
 ### Note
-This package requires Node.js version 6.x or above, although the tested version is 10.x to 14.x, 6.x and 8.x should work too
+This package requires Node.js version 6.13.0 or above, although the tested version is 10.x to 14.x, 6.13.0 to 9.x should work too
