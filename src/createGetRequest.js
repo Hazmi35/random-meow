@@ -36,9 +36,9 @@ module.exports = function get(url, options) {
                 response.raw += chunk;
             });
             res.on("end", () => {
-                response.body = res.headers["content-type"].includes("application/json") ? JSON.parse(response.raw) : response.raw;
+                response.body = res.headers["content-type"] === "application/json" ? JSON.parse(response.raw) : response.raw;
                 if (response.ok) { resolve(response); } else {
-                    const err = new Error(`[random-meow] Error while trying to fetch, ${options.hostname}${options.path} ${res.statusCode} ${res.statusMessage}`);
+                    const err = new Error(`[random-meow] Error while trying to fetch, ${httpOptions.hostname}${httpOptions.path} ${res.statusCode} ${res.statusMessage}`);
                     Object.assign(err, response);
                     reject(err);
                 }
