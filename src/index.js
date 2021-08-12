@@ -11,7 +11,7 @@ function meow(tryWithHttp = true) {
             .then(res => resolve(res.body.file))
             .catch(e => {
                 if (tryWithHttp) get("http://aws.random.cat/meow").then(res => resolve(res.body.file)).catch(reject);
-                else reject(e)
+                else reject(e);
             });
     });
 }
