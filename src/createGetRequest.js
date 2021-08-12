@@ -1,5 +1,5 @@
 const { request: httpRequest } = require("https");
-const { parse } = require("url");
+const { URL } = require("url");
 const { name, version, repository } = require("../package.json");
 
 /**
@@ -10,10 +10,11 @@ const { name, version, repository } = require("../package.json");
 * @private Internal Function - NO SUPPORT OUTSIDE RANDOM-MEOW
 */
 module.exports = function get(url, options) {
+    const parsedUrl = new URL(url);
     return new Promise((resolve, reject) => {
         const httpOptions = {
-            hostname: parse(url).hostname,
-            path: parse(url).path,
+            hostname: parsedUrl.hostname,
+            path: parsedUrl.href,
             method: "GET",
             headers: {}
         };
@@ -38,7 +39,7 @@ module.exports = function get(url, options) {
             res.on("end", () => {
                 response.body = res.headers["content-type"] === "application/json" ? JSON.parse(response.raw) : response.raw;
                 if (response.ok) { resolve(response); } else {
-                    const err = new Error(`[random-meow] Error while trying to fetch, ${httpOptions.hostname}${httpOptions.path} ${res.statusCode} ${res.statusMessage}`);
+                    const err = new Error(`[random-meow] Error while trying to fetch ${httpOptions.path}, ${res.statusCode} ${res.statusMessage}`);
                     Object.assign(err, response);
                     reject(err);
                 }
