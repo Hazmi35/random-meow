@@ -10,6 +10,10 @@
     "random.cat",
     "random cat images"
   ],
+  "files": [
+    "src",
+    "typings/index.d.ts"
+  ],
   "homepage": "https://github.com/Hazmi35/random-meow#readme",
   "bugs": {
     "url": "https://github.com/Hazmi35/random-meow/issues"
